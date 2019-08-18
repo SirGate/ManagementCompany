@@ -44,8 +44,7 @@ justify-content: center;
 
 .menu> ul a:hover{
     color: #87D9F1;
-    font-size: 20px;
- }
+  }
 
 .moto1{
     display: flex;
@@ -110,12 +109,15 @@ justify-content: center;
 
 .moto4{
     display: flex;
-    justify-content: center;
-    padding-top:215px;
+    justify-content: space-around;
     color:#FFFFFF;
-    font-size: 28px;
-   }
-
+    font-size: 1.8rem ;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding-top: 180px;
+    padding-bottom: 120px;
+       }
+   
 .moto5{
     display: flex;
     justify-content: center;
@@ -124,58 +126,129 @@ justify-content: center;
     font-size: 28px;
    }
 
-
 .labels1{
-padding-top: 100px;
-width: 100%;
-display: flex;
+ display: flex;
 justify-content: space-around;
-margin-bottom: 50px;
 }
 
-.sentences{
-    width:100%;
-    display: flex;
-    justify-content: space-around;
-    color:#FFFFFF;
-    font-size: 20px;
+.labels1 > div {
+    width: 340px;
+    text-align: center;
+}
+.labels1 p {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #FFFFFF;
 }
 
 .objects{
     display:flex;
-    flex-direction: column;
     width: 100%;
     height: 809px;
-    background-color: gray;
+    flex-wrap: wrap;
+    }
+
+    .objects a {
+        color: #FFFFFF;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+.veil{
+    width: 100%;
+	height: 100%;
+	background-color: rgba( 16, 18, 24, 0.63);
 }
 
-.first{
-    display:flex;
-    flex:1;
-    width: 100%;
-}
 
 .one{
-    width:33%;
-}
+     width:33%;
+    background: url(/img/1.png) no-repeat center / cover;
+ }
+
+
 
 .two{
     width:67%;
+    background: url(/img/2.png) no-repeat center / cover;
 }
 
-.second{
-    display:flex;
-    flex:1;
-    width: 100%;
-}
 
 .three{
     width:67%;
+    background: url(/img/3.png) no-repeat center / cover;
+
 }
 
 .four{
     width:33%;
+    background: url(/img/4.png) no-repeat center / cover;
 }
+
+
+ .little {
+      padding-top: 50;
+        }
+
+.little svg {
+	margin-left: 25px;
+	visibility: hidden;
+}
+
+.bigger svg {
+	margin-left: 25px;
+	visibility: hidden;
+}
+
+.one:hover a {
+    color: #0ff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.one:hover svg {
+    visibility: visible;
+}
+
+.two:hover a {
+    color: #0ff;;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.two:hover svg {
+    visibility: visible;
+}
+
+.three:hover a {
+    color: #0ff;;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.three:hover svg {
+    visibility: visible;
+
+}.four:hover a {
+    color: #0ff;;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.four:hover svg {
+    visibility: visible;
+}
+
 
 .contacts{
     width: 100%;
@@ -305,4 +378,135 @@ label {
     padding-top: 24px;
     display: flex;
     justify-content: space-evenly;
+    }
+
+.menu_mob, .Blocks_mobile, .moto2_mob{
+    display: none;
+}
+
+  
+@media (max-width: 992px){
+
+
+.nomobile{
+    display: none;
+}
+
+
+.menu_mob{
+    width: 100%;
+    display: inline-block;
+}
+
+.burger {
+    display: inline-block;
+    margin-left: 10px;
+ } 
+  
+ .burger > span {
+     width: 32px;
+     border: 1.5px solid #fff;
+     border-radius: 2px;
+     background-color: #fff;
+     display: block;
+     margin-bottom: 9px; 
+ }
+ .burger_name {
+    height: 25px;
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 48px;
+    margin-top:-32px;
+    text-transform: uppercase;
+        }
+
+ #person {
+    height: 35px;
+    margin-top:-37px;
+    margin-right:10px;
+    float: right;
+}
+.moto2_mob{
+        color: white;
+        font-size: 2.2rem;
+        text-align:center;
+        display: flex;
+        padding: 0;
+        margin-top: 100px;
+       }
+
+
+.baseInfo{
+        height: 1100px;
+            }
+    
+
+    .Blocks_mobile {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        color: white;
+        padding-top: 70px;
+        
+    }
+    .block_mobile {
+        margin: 15px 0;
+        width: 100%;
+        min-width: 290px;
+        height: 80px;
+        border-radius: 80px;
+        text-align: center;
+        background-color: #528290;
+        border: 0 solid;
+        color: white;
+        box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
+    }
+    .block_mobile p {
+        padding: 26px 20px 20px 20px;
+        width: 100%;
+        height: 80px;
+        font-size: 1rem;
+    }
+    
+    .moto4 {
+        padding: 0;
+        padding-top:100px;
+        color: white;
+        font-size: 1.8rem;
+        text-align: center;
+        letter-spacing: 0.1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .labels1 {
+            width: 60%;
+            margin: 70px auto;
+            display: flex;
+            flex-direction: column;
+        }
+    .labels1 > div {
+            width: 100%;
+            text-align: center;
+            margin: 30px 0;
+        } 
+
+        .moto5 {
+            padding: 0;
+        
+            color: white;
+            font-size: 1.8rem;
+            text-align: center;
+            letter-spacing: 0.1em;
+            display: flex;
+            justify-content: center;
+        }
+
+ .darker{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 18, 24, 0.73);
+   }
     }

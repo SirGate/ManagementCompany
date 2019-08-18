@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+   
     
     <title>Document-2</title>
 
@@ -17,7 +18,7 @@
  <div class="wrapper">
 <header class="head">
     <div class="darker">
-       <nav class="menu">
+       <nav class="menu nomobile">
            <ul>
                <li></li>
                <li><a href="http://ya.ru">О компании</a></li>
@@ -30,7 +31,18 @@
                <li style="flex: 1"></li>
            </ul>
     </nav>
- <div class="moto1">
+    <nav class="menu_mob">
+        <div class="burger">	
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        <div class="burger_name ">черная стрела</div>
+         <img id="person" src="/img/person.png" alt="">
+        </nav>
+
+ <div class="moto1 nomobile">
+
     <h1>ЧЕРНАЯ СТРЕЛА</h1>
     <p><span class= "moto2">Управляющая компания нового уровня</span>
         <br>
@@ -40,55 +52,90 @@
                              с применением современных технологий 
     </span></h2>
 </div>
+
+<p class= "moto2_mob">Управляющая компания нового уровня</p>
+
+<div class = "Blocks_mobile">
+    <div class = "block_mobile">
+        <p>Внести показания счетчиков и оплатить квитанции</p>
+    </div>
+    <div class = "block_mobile">
+        <p>Заказать дополнительные услуги</p>
+    </div>
+    <div class = "block_mobile">
+        <p>Начать сотрудничество</p>
+    </div>
+</div>
 </div>
 </header>
 
 <div class="baseInfo">
-        <div class = "Blocks">
+        <div class = "Blocks nomobile">
                 <div class = "block">
                     <p>Внести показания счетчиков и оплатить квитанции</p>
                     <img class = "pointer" src="/img/arr.svg"> 
                 </div>
                 <div class = "block">
                     <p>Заказать дополнительные услуги</p>
-                    <img class = "pointer" src="img/arr.svg"> 
+                    <img class = "pointer" src="/img/arr.svg"> 
                 </div>
                 <div class = "block">
                     <p>Начать сотрудничество</p>
-                    <img class = "pointer" src="img/arr.svg"> 
+                    <img class = "pointer" src="/img/arr.svg"> 
                 </div>
         </div>
 
 <div><p><span class= "moto4">ЧЕРНАЯ СТРЕЛА</span></div>
+
 <div class="labels1">
+   <div>
     <img src="/img/настройки ик.svg">
+    <p>Самые современные технологии в управлении домами</p> 
+</div>
+<div>
     <img src="/img/bar-graph.svg">
+    <p>Только проверенные застройщики</p>
+</div>
+<div>
     <img src="/img/friends-front.svg">
+    <p>Круглосуточный клиентский сервис</p>
 </div>
-<div class="sentences">
-   <p>Самые современные технологии &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;в управлении домами</p> 
-       <p>Только проверенные &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;застройщики
-       </p>
-       <p>Круглосуточный клиентский <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; сервис</p>
 </div>
+
 <div><p><span class= "moto5">ОБЪЕКТЫ</span></div>
 </div>
 
+
 <div class="objects">
-    <div class="first">
-           <img class="one" src="img/lesnoi.png">
-           <img class="two"src="img/nevskij.png">
-    </div>
-    <div class="second">
-            <img class="three" src="img/3.png">
-            <img class="four" src="img/4.png">
-     </div>
-</div>
+         <div class="one">
+             <div class="veil">
+                <p class="little"><a href="#">Лесной пр., 26 <svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55.7071 8.70711C56.0976 8.31659 56.0976 7.68342 55.7071 7.2929L49.3431 0.928937C48.9526 0.538412 48.3195 0.538412 47.9289 0.928936C47.5384 1.31946 47.5384 1.95263 47.9289 2.34315L53.5858 8L47.9289 13.6569C47.5384 14.0474 47.5384 14.6805 47.9289 15.0711C48.3195 15.4616 48.9526 15.4616 49.3431 15.0711L55.7071 8.70711ZM-8.74228e-08 9L55 9L55 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#528290"/>
+                    </svg></a></p>
+                </div>
+           </div>
+           <div class="two">
+                <div class="veil">
+                <span class="bigger"><a href="#">Невский пр., 170 <svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55.7071 8.70711C56.0976 8.31659 56.0976 7.68342 55.7071 7.2929L49.3431 0.928937C48.9526 0.538412 48.3195 0.538412 47.9289 0.928936C47.5384 1.31946 47.5384 1.95263 47.9289 2.34315L53.5858 8L47.9289 13.6569C47.5384 14.0474 47.5384 14.6805 47.9289 15.0711C48.3195 15.4616 48.9526 15.4616 49.3431 15.0711L55.7071 8.70711ZM-8.74228e-08 9L55 9L55 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#528290"/>
+                    </svg></a></span>
+                    </div>
+            </div>
+              <div class="three">
+                    <div class="veil">
+                    <span class="bigger"><a href="#">Новгородская ул., 19 <svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M55.7071 8.70711C56.0976 8.31659 56.0976 7.68342 55.7071 7.2929L49.3431 0.928937C48.9526 0.538412 48.3195 0.538412 47.9289 0.928936C47.5384 1.31946 47.5384 1.95263 47.9289 2.34315L53.5858 8L47.9289 13.6569C47.5384 14.0474 47.5384 14.6805 47.9289 15.0711C48.3195 15.4616 48.9526 15.4616 49.3431 15.0711L55.7071 8.70711ZM-8.74228e-08 9L55 9L55 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#528290"/>
+                        </svg></a></span>
+                        </div>
+            </div>
+            <div class="four">
+                    <div class="veil">
+                    <span class="little"><a href="#">пр.Медиков, 29</a><svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M55.7071 8.70711C56.0976 8.31659 56.0976 7.68342 55.7071 7.2929L49.3431 0.928937C48.9526 0.538412 48.3195 0.538412 47.9289 0.928936C47.5384 1.31946 47.5384 1.95263 47.9289 2.34315L53.5858 8L47.9289 13.6569C47.5384 14.0474 47.5384 14.6805 47.9289 15.0711C48.3195 15.4616 48.9526 15.4616 49.3431 15.0711L55.7071 8.70711ZM-8.74228e-08 9L55 9L55 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#528290"/>
+                        </svg></span>
+                        </div>
+            </div>
+                </div>
 
 <div class="contacts">
     <div class="moto6">
