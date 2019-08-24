@@ -302,12 +302,10 @@ justify-content: space-around;
     border-radius: 4px;
 }
 input {
-    font-family: 'Montserrat', sans-serif;
     height: 40px;
     color: rgb(158, 158, 158);
 }
 textarea {
-    font-family: 'Montserrat', sans-serif;
     color: rgb(158, 158, 158);
     padding-top: 15px;
     height: 90px;
@@ -329,7 +327,6 @@ label {
     display: flex;
 }
 #button1 {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     align-self: center;
     text-align: center;
