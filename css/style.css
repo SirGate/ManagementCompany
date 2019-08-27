@@ -1,6 +1,5 @@
 .wrapper{
     width: 100%;
-    background-color: red;
     font-family: 'Montserrat', sans-serif;   
 }
 
@@ -13,7 +12,7 @@
     background-size: cover;
    }
 
-   .darker{
+.darker{
     padding-top: 50px;
     width: 100%;
     height: 100%;
@@ -148,12 +147,15 @@ justify-content: space-around;
     flex-wrap: wrap;
     }
 
-    .objects a {
-        color: #FFFFFF;
-        font-weight: 600;
-        text-decoration: none;
-        font-size: 22px;
-        text-transform: uppercase;
+.objects  a{
+    display: flex;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-top:300px;
+    padding-left: 50px;
     }
 
 .veil{
@@ -162,13 +164,10 @@ justify-content: space-around;
 	background-color: rgba( 16, 18, 24, 0.63);
 }
 
-
 .one{
      width:33%;
     background: url(/img/1.png) no-repeat center / cover;
  }
-
-
 
 .two{
     width:67%;
@@ -188,27 +187,27 @@ justify-content: space-around;
 }
 
 
- .little {
+.little {
       padding-top: 50;
         }
 
 .little svg {
-	margin-left: 25px;
+    margin-left: 25px;
+    padding-top:5px;
 	visibility: hidden;
 }
 
+
 .bigger svg {
-	margin-left: 25px;
+    margin-left: 25px;
+    padding-top:5px;
 	visibility: hidden;
 }
 
 .one:hover a {
     color: #0ff;
-    font-weight: 600;
-    text-decoration: none;
     font-size: 25px;
-    text-transform: uppercase;
-}
+    }
 
 .one:hover svg {
     visibility: visible;
@@ -216,11 +215,8 @@ justify-content: space-around;
 
 .two:hover a {
     color: #0ff;;
-    font-weight: 600;
-    text-decoration: none;
     font-size: 25px;
-    text-transform: uppercase;
-}
+  }
 
 .two:hover svg {
     visibility: visible;
@@ -228,27 +224,20 @@ justify-content: space-around;
 
 .three:hover a {
     color: #0ff;;
-    font-weight: 600;
-    text-decoration: none;
     font-size: 25px;
-    text-transform: uppercase;
-}
+  }
 
 .three:hover svg {
     visibility: visible;
 
 }.four:hover a {
     color: #0ff;;
-    font-weight: 600;
-    text-decoration: none;
     font-size: 25px;
-    text-transform: uppercase;
-}
+  }
 
 .four:hover svg {
     visibility: visible;
 }
-
 
 .contacts{
     width: 100%;
@@ -298,7 +287,7 @@ justify-content: space-around;
 .input {
     display: inline-block;
     width: 480px;
-    margin: 2px auto;
+    margin: 10px auto;
     border-radius: 4px;
 }
 input {
@@ -352,7 +341,7 @@ label {
 .moto10{
     width:35%;
     padding-top: 124px;
-}
+   }
 
 .moto11{
     display: flex;
@@ -370,14 +359,14 @@ label {
       padding-top: 124px;
 
 }
-
 .labels2{
     padding-top: 24px;
     display: flex;
     justify-content: space-evenly;
     }
 
-.menu_mob, .Blocks_mobile, .moto2_mob, .moto8_mob{
+.menu_mob, .Blocks_mobile, .moto2_mob, .moto8_mob, 
+.moto11_mob, .tel_mob,.moto12_mob, .labels2_mob{
     display: none;
 }
 
@@ -432,7 +421,7 @@ label {
         font-size: 2.2rem;
         text-align:center;
         display: flex;
-        padding: 0;
+         justify-content: center;
         margin-top: 100px;
        }
 
@@ -527,7 +516,19 @@ label {
      width:100%;
      height:404px;
            }
- 
+
+.contacts{
+    height: 790px;
+        }
+
+.moto7{
+    line-height: 5;
+}
+
+.moto6{
+  padding-top: 20px;
+      }
+
 .moto8_mob{
   display: flex;
   justify-content: center;
@@ -535,13 +536,55 @@ label {
   line-height: 2;
         }
 
-.contacts{
-   height: 770px;
-        }
-        
-.moto6{
-   padding-top: 20px;
-           }
+#button1 {        
+    width:270px;
+    margin-top: 20px;
+}
+
+.foot{
+ flex-direction:column;
+}
+
+.moto11_mob{
+   padding-top:50px; 
+   padding-left: 20px;
+   display: flex;
+   font-size: 24px;
+   justify-content: left;
+}
+
+.tel_mob{
+    padding-top:30px; 
+    padding-left: 20px;
+    display: flex;
+    font-weight: 500;
+    font-size: 24px;
+    color:#528290;
+    justify-content: left;
+ }
+
+ .moto12_mob{
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 2;
+    padding-top: 30px;
+    margin-left: -20px;
+}
+
+.foot{
+  height:490px;  
+}
+
+.labels2_mob{
+    width:55%;
+    padding-top:30px;
+    padding-left:30px;
+    display:flex;
+    justify-content:space-between;
+    }
+
 
  .darker{
     width: 100%;
@@ -550,13 +593,9 @@ label {
    }
     }
 
-    @media (max-width: 520px){
+@media (max-width: 520px){
 
 .input {
-   display: inline-block;
-   width: 90%;
-   margin: 2px auto;
-   border-radius: 4px;
+    width: 90%;
                   }
-          
     }
