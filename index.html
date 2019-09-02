@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/test.js"></script>
+  
    
 
     <title>Document-2</title>
@@ -19,7 +19,31 @@
  <div class="wrapper">
 <header class="head">
     <div class="darker">
-       <nav class="menu nomobile">
+            <div class="side_panel">   
+                    <div id="burg2" class="burger2" >	
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+             <div class="slide_name ">черная стрела</div>
+             <img id="person" src="/img/person.png" alt="">
+                         </nav>
+                 
+                          <nav class="menu_slide">
+                                <ul>
+                                    <li></li>
+                                    <li><a href="http://ya.ru">О компании</a></li>
+                                    <li><a href="http://ya.ru">Услуги</a></li>
+                                    <li><a href="http://ya.ru">Информация</a></li>
+                                    <li><a href="http://ya.ru">Новости</a></li>
+                                    <li><a href="http://ya.ru">FAQ</a></li>
+                                    <li><a href="http://ya.ru">Контакты</a></li>
+                                    <li><a href="http://ya.ru">Личный кабинет</a></li>
+                                    <li style="flex: 1"></li>
+                                </ul>
+                         </nav>              
+            </div>
+        <nav class="menu nomobile">
            <ul>
                <li></li>
                <li><a href="http://ya.ru">О компании</a></li>
@@ -33,15 +57,16 @@
            </ul>
     </nav>
     <nav class="menu_mob">
-        <div class="burger">	
+        <div id="burg" class="burger" >	
               <span></span>
               <span></span>
               <span></span>
             </div>
+        
         <div class="burger_name ">черная стрела</div>
          <img id="person" src="/img/person.png" alt="">
         </nav>
-
+       
  <div class="moto1 nomobile">
 
     <h1>ЧЕРНАЯ СТРЕЛА</h1>
@@ -169,7 +194,7 @@
                 <input class = "check nomobile" type="checkbox">
                 <p class ="checktext nomobile">я согласен (-сна) с политикой обработки персональных данных</p>
             </div>
-            <button id="button1">ОТПРАВИТЬ</button>
+            <input id="button1" type="button" value="ОТПРАВИТЬ">
         </div>
 
 </div>
@@ -245,5 +270,6 @@
 </div> 
 </footer>
 </div>
+<script src="js/burger.js"></script>
 </body>
 </html>

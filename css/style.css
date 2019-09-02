@@ -1,3 +1,4 @@
+
 .wrapper{
     width: 100%;
     font-family: 'Montserrat', sans-serif;   
@@ -44,6 +45,15 @@ justify-content: center;
 .menu> ul a:hover{
     color: #87D9F1;
   }
+
+.side_panel{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    background-color: #2C2C2C;
+    padding-left: 50px;
+ }
 
 .moto1{
     display: flex;
@@ -366,13 +376,13 @@ label {
     }
 
 .menu_mob, .Blocks_mobile, .moto2_mob, .moto8_mob, 
-.moto11_mob, .tel_mob,.moto12_mob, .labels2_mob{
+.moto11_mob, .tel_mob,.moto12_mob, .labels2_mob, 
+.side_panel, .menu_slide{
     display: none;
 }
 
   
 @media (max-width: 992px){
-
 
 .nomobile{
     display: none;
@@ -400,6 +410,22 @@ label {
      display: block;
      margin-bottom: 9px; 
  }
+
+ .burger2 {
+    display: inline-block;
+    margin-left: -40px;
+ } 
+  
+.burger2 > span {
+     width: 32px;
+     border: 1.5px solid #fff;
+     border-radius: 2px;
+     background-color: #fff;
+     display: block;
+     margin-top: 9px; 
+
+ }
+
 .burger_name {
     height: 25px;
     display: flex;
@@ -409,6 +435,17 @@ label {
     margin-top:-32px;
     text-transform: uppercase;
         }
+
+.slide_name {
+            height: 25px;
+            color: white;
+            font-size: 1.3rem;
+            margin-left: 48px;
+            margin-top:-25px;
+            margin-left:5px;
+            text-transform: uppercase;
+                }
+        
 
  #person {
     height: 35px;
@@ -421,16 +458,42 @@ label {
         font-size: 2.2rem;
         text-align:center;
         display: flex;
-         justify-content: center;
+        justify-content: center;
         margin-top: 100px;
        }
 
-
+.menu_slide{
+    display: flex;
+    padding-top: 50px;
+    width: 100%;
+         }
+    
+.menu_slide > ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    
+.menu_slide > ul > li{
+    display: flex;
+    justify-content:center;
+    }
+    
+.menu_slide> ul a{
+        color:white;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 60px;
+    }
+    
+.menu_slide> ul a:hover{
+        color: #87D9F1;
+      }
+    
 .baseInfo{
         height: 1100px;
             }
     
-
 .Blocks_mobile {
         margin: 0 auto;
         display: flex;
