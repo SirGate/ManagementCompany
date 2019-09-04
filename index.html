@@ -8,26 +8,41 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-  
-   
 
     <title>Document-2</title>
 
+<style>
+#tran{
+    display: block;
+    justify-content: center;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    left: -320px;
+    background-color: #2C2C2C;
+    padding-left: 50px;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -o-transition: top 1s ease-out 0.3s;
+    transition: left 1s ease-out 0.3s;  
+   }
+</style>
 </head>
+
 
 <body>
  <div class="wrapper">
 <header class="head">
     <div class="darker">
-            <div class="side_panel">   
+            <div id="tran" class="side_panel">   
                     <div id="burg2" class="burger2" >	
                             <span></span>
                             <span></span>
                             <span></span>
                           </div>
-             <div class="slide_name ">черная стрела</div>
-             <img id="person" src="/img/person.png" alt="">
-                         </nav>
+             <div class="slide_name">черная стрела</div>
+             <img id="person_sl" src="/img/person.png" alt="">
+                         
                  
                           <nav class="menu_slide">
                                 <ul>
@@ -43,6 +58,7 @@
                                 </ul>
                          </nav>              
             </div>
+            
         <nav class="menu nomobile">
            <ul>
                <li></li>

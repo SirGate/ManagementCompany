@@ -1,4 +1,3 @@
-
 .wrapper{
     width: 100%;
     font-family: 'Montserrat', sans-serif;   
@@ -46,14 +45,7 @@ justify-content: center;
     color: #87D9F1;
   }
 
-.side_panel{
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: 100%;
-    background-color: #2C2C2C;
-    padding-left: 50px;
- }
+
 
 .moto1{
     display: flex;
@@ -376,8 +368,7 @@ label {
     }
 
 .menu_mob, .Blocks_mobile, .moto2_mob, .moto8_mob, 
-.moto11_mob, .tel_mob,.moto12_mob, .labels2_mob, 
-.side_panel, .menu_slide{
+.moto11_mob, .tel_mob,.moto12_mob, .labels2_mob {
     display: none;
 }
 
@@ -402,6 +393,10 @@ label {
     margin-left: 10px;
  } 
   
+.burger:hover{
+ cursor: pointer;
+ }
+
 .burger > span {
      width: 32px;
      border: 1.5px solid #fff;
@@ -411,11 +406,17 @@ label {
      margin-bottom: 9px; 
  }
 
- .burger2 {
+.burger2 {
     display: inline-block;
+    margin-top:10px;
     margin-left: -40px;
+    padding-right: 10px;   
  } 
-  
+
+.burger2:hover{
+    cursor: pointer;
+    }
+
 .burger2 > span {
      width: 32px;
      border: 1.5px solid #fff;
@@ -437,18 +438,24 @@ label {
         }
 
 .slide_name {
-            height: 25px;
-            color: white;
-            font-size: 1.3rem;
-            margin-left: 48px;
-            margin-top:-25px;
-            margin-left:5px;
-            text-transform: uppercase;
+    margin-top:-15px;
+    height: 25px;
+    color: white;
+    display: inline-block;
+    font-size: 1.3rem;
+    left:50px;
+    text-transform: uppercase;
                 }
         
-
- #person {
+#person {
     height: 35px;
+    margin-top:-37px;
+    float: right;
+           }
+
+#person_sl {
+    height: 35px;
+    padding-left:40px;
     margin-top:-37px;
     margin-right:10px;
     float: right;
@@ -464,9 +471,9 @@ label {
 
 .menu_slide{
     display: flex;
-    padding-top: 50px;
+    padding-top: 40px;
     width: 100%;
-         }
+  }
     
 .menu_slide > ul{
     display: flex;
