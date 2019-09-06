@@ -118,6 +118,10 @@
         }
 
 .low_menu a{
+  padding-top: 8px;
+  padding-bottom:8px;
+  padding-left: 5px;
+  padding-right: 5px;
   letter-spacing: 0.02em;
   font-weight: 500;
   color: #528290;
@@ -134,24 +138,19 @@
    padding: 10px 20px 10px 20px;
            }
 
-.low_menu > ul li:hover {
+.low_menu > ul li a:hover {
   background-color: #528290;
   border-radius: 20px;
-        }
+  color: white;
+          }
 
-.low_menu a:hover{
-     letter-spacing: 0.02em;
-     font-weight: 500;
-     color: white;
-     text-decoration: none;
-              }  
-           
 .frame_container{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding-top: 60px;
       }
+
 .frames{
    display: flex;
    flex-wrap: wrap;
