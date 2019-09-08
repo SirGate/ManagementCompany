@@ -8,6 +8,23 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="/css/pa.css">
     <link rel="stylesheet" href="/css/reset.css">
+    <style>
+
+#mob{
+            display: block;
+            justify-content: center;
+            position: absolute;
+            width: 350px;
+            height: 870px;
+            left: -350px;
+            background-color: #2C2C2C;
+            padding-left: 50px;
+            -webkit-transition: left 0.3s;
+            -moz-transition: left 0.3s;
+            -o-transition: top 1s ease-out 0.3s;
+            transition: left 1s ease-out 0.3s;  
+           }
+</style>
 </head>
 <body>
     <div class="container">
@@ -42,17 +59,7 @@
               <div class="article"><a href="http://rbc.ru/">Опросы</a></div>
             </div>
 
-            <div class="separator">
-              <hr size=2px width=246px align="left">
-            </div>
-
-            <div class="services_mobile">
-              <div class="article"><a href="http://rbc.ru/">О компании</a></div>
-              <div class="article"><a href="http://rbc.ru/">FAQ</a></div>
-              <div class="article"><a href="http://rbc.ru/">Контакты</a></div>
-            </div>
-
-            <div class="exit">
+             <div class="exit">
               <div class="article_exit"><a href="http://rbc.ru/">Выйти</a></div>
               <div class="social_network">
                 <img src="img/vk.svg" alt="">
@@ -62,8 +69,64 @@
             </div>
             </div>
             </div>
+
             <div class="inner_area">
       <div class="top">
+         
+          <div id="mob" class="side_panel_mobile">
+            <div id="burg2" class="burger2" >	
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              <div class="personal_info">
+                <div class="foto">
+                  <img src="/img/personal.png" alt="">
+                    </div>
+                  <div class="name">
+                    <h3>Александр</h3>
+                  </div>
+                  <div class="address">
+                      <div class="address_article"><a href="http://rbc.ru/">Лесной проспект 26, парадная 3, квартира 136</a></div>
+              
+                  </div>
+              <div class="separator">
+                <hr size=2px width=246px align="left">
+              </div>
+              <div class="services">
+                <div class="article"><a href="http://rbc.ru/">Внести показания счетчиков</a></div>
+                <div class="article"><a href="http://rbc.ru/">Оплатить квитанцию</a></div>
+                <div class="article"><a href="http://rbc.ru/">Заказать услуги</a></div>
+              </div>
+              <div class="separator">
+                <hr size=2px width=246px align="left">
+              </div>
+              <div class="services">
+                <div class="article"><a href="http://rbc.ru/">Мои обращения</a>
+                  <img src="/img/count.svg" alt="">
+                </div>
+                <div class="article"><a href="http://rbc.ru/">Новости дома</a></div>
+                <div class="article"><a href="http://rbc.ru/">Опросы</a></div>
+              </div>
+                
+              <div class="exit">
+                <div class="article_exit"><a href="http://rbc.ru/">Выйти</a></div>
+                <div class="social_network">
+                  <img src="img/vk.svg" alt="">
+                  <img src="img/inst.svg" alt="">
+                  <img src="img/fb.svg" alt="">
+                </div>
+              </div>
+              </div>
+              </div>
+
+               <div id="burg" class="burger" >	
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="slide_name">Личный кабинет</div>
+                      <img id="person_sl" src="/img/person.png" alt="">   
               <nav class="top_menu">
                 <div class="top_article"><a href="http://rbc.ru/">О компании</a></div>
                 <div class="top_article"><a href="http://rbc.ru/">Услуги</a></div>
@@ -124,5 +187,6 @@
               </div>
             </div>
                </div>
+<script src="js/PA_burger.js"></script>
 </body>
 </html>
